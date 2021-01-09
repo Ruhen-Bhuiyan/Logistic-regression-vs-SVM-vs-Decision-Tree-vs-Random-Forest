@@ -16,14 +16,5 @@ duplicatevalues = mydata[mydata.duplicated(['Age', 'Smoke'])]
 print("Duplicate Rows based on 2 columns are:", duplicatevalues, sep='\n')
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 
 
