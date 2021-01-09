@@ -30,20 +30,4 @@ plt.title('Heatmap correlation')
 plt.show()
 
 
-# In[13]:
-
-
-
-
-
-# In[11]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
