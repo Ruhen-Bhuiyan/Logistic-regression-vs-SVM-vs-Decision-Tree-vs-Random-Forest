@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[25]:
-
-
 import numpy as np 
 import pandas as pd 
 from sklearn import preprocessing
@@ -16,15 +10,9 @@ import warnings
 warnings.simplefilter(action='ignore')
 
 
-# In[26]:
-
-
 mydata = pd.read_csv("D:\\445\\khidmahactuall.csv")
 # preview train data
 mydata.head()
-
-
-# In[27]:
 
 
 from sklearn.linear_model import LogisticRegression
@@ -36,9 +24,6 @@ mymodel = LogisticRegression()
 rfe = RFE(mymodel, 5)
 rfe = rfe.fit(X, y)
 print('Selected features are as follows: %s' % list(X.columns[rfe.support_]))
-
-
-# In[28]:
 
 
 from sklearn.model_selection import train_test_split, cross_val_score
@@ -55,10 +40,6 @@ print('Train/Test split results:')
 print(logreg.__class__.__name__+" accuracy = %2.3f" % accuracy_score(y_test, y_pred))
 print(logreg.__class__.__name__+" log_loss = %2.3f" % log_loss(y_test, y_pred_proba))
 
-
-# In[29]:
-
-
 logreg = LogisticRegression()
 scores_accuracy = cross_val_score(logreg, X, y, cv=11, scoring='accuracy')
 scores_log_loss = cross_val_score(logreg, X, y, cv=11, scoring='neg_log_loss')
@@ -67,9 +48,6 @@ print('K-fold cross-validation results are as follows:')
 print(logreg.__class__.__name__+" average accuracy = %2.3f" % scores_accuracy.mean())
 print(logreg.__class__.__name__+" average log_loss = %2.3f" % -scores_log_loss.mean())
 print(logreg.__class__.__name__+" average auc = %2.3f" % scores_auc.mean())
-
-
-# In[30]:
 
 
 from sklearn.model_selection import cross_validate
@@ -83,16 +61,5 @@ for score in range(len(scoring)):
                                if list(scoring.values())[score]=='neg_log_loss' 
                                else res['test_%s' % list(scoring.values())[score]].mean(), 
                                res['test_%s' % list(scoring.values())[score]].std()))
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 
 
