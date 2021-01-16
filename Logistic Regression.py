@@ -4,16 +4,14 @@ from sklearn import preprocessing
 import matplotlib.pyplot as plt 
 plt.rc("font", size=15)
 import seaborn as sns
-sns.set(style="white") #white background style for seaborn plots
+sns.set(style="white") 
 sns.set(style="whitegrid", color_codes=True)
 import warnings
 warnings.simplefilter(action='ignore')
 
-
 mydata = pd.read_csv("D:\\445\\khidmahactuall.csv")
 # preview train data
 mydata.head()
-
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_selection import RFE
@@ -24,7 +22,6 @@ mymodel = LogisticRegression()
 rfe = RFE(mymodel, 5)
 rfe = rfe.fit(X, y)
 print('Selected features are as follows: %s' % list(X.columns[rfe.support_]))
-
 
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import accuracy_score, classification_report, precision_score, recall_score 
@@ -48,7 +45,6 @@ print('K-fold cross-validation results are as follows:')
 print(logreg.__class__.__name__+" average accuracy = %2.3f" % scores_accuracy.mean())
 print(logreg.__class__.__name__+" average log_loss = %2.3f" % -scores_log_loss.mean())
 print(logreg.__class__.__name__+" average auc = %2.3f" % scores_auc.mean())
-
 
 from sklearn.model_selection import cross_validate
 scoring = {'accuracy': 'accuracy', 'log_loss': 'neg_log_loss', 'auc': 'roc_auc'}
