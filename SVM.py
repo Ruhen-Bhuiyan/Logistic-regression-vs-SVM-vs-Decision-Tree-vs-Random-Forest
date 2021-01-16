@@ -32,11 +32,9 @@ y_pred = svm1.predict(X_test)
 print('Accuracy Score: {}'.format(metrics.accuracy_score(y_test,y_pred)))
 print('ROC AUC Score: {}'.format(metrics.roc_auc_score(y_test,y_pred)))
 
-
 from sklearn.model_selection import cross_val_score
 n_folds = 11
 scores = cross_val_score(svm1, X_train, y_train, cv=n_folds, scoring='roc_auc', n_jobs=-1) 
-
 
 fold_names = list(range(n_folds))
 fold_names.append('Average')
