@@ -1,7 +1,5 @@
 get_ipython().run_line_magic('matplotlib', 'inline')
 
-
-
 import matplotlib.pyplot as plt
 
 import pandas as pd
@@ -20,18 +18,15 @@ plt.title('Scatter plot on dataset')
 
 sns.boxplot(x='Diagnosis',y='FBS',data=d)
 
-
 sns.violinplot(x='Diagnosis',y='ABF',data=d,size=6)
 
-sns.violinplot(x='Diagnosis',y='SGPT',data=d,size=6)
-
+sns.violinplot(x='Diagnosis',y='SGPT',data=d,size=6
 
 import seaborn as sns
 
 sns.countplot(x='Smoke',data=d,palette='hls')
 
 plt.show()
-
 
 get_ipython().run_line_magic('matplotlib', 'inline')
 
@@ -42,8 +37,6 @@ plt.title('How Age effect diagnosis')
 plt.xlabel('Age')
 
 plt.ylabel('Smoke')
-
-
 
 table=pd.crosstab(d.FBS,d.Diagnosis)
 
