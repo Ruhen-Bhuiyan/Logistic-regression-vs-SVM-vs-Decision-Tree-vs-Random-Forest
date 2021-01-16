@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 
@@ -27,21 +21,9 @@ plt.title('Scatter plot on dataset')
 sns.boxplot(x='Diagnosis',y='FBS',data=d)
 
 
-# In[2]:
-
-
-
 sns.violinplot(x='Diagnosis',y='ABF',data=d,size=6)
 
-
-# In[3]:
-
-
 sns.violinplot(x='Diagnosis',y='SGPT',data=d,size=6)
-
-
-# In[4]:
-
 
 
 import seaborn as sns
@@ -49,10 +31,6 @@ import seaborn as sns
 sns.countplot(x='Smoke',data=d,palette='hls')
 
 plt.show()
-
-
-# In[5]:
-
 
 
 get_ipython().run_line_magic('matplotlib', 'inline')
@@ -66,8 +44,6 @@ plt.xlabel('Age')
 plt.ylabel('Smoke')
 
 
-# In[6]:
-
 
 table=pd.crosstab(d.FBS,d.Diagnosis)
 
@@ -78,10 +54,6 @@ plt.title('Stacked Bar Chart ')
 plt.xlabel('FBS')
 
 plt.ylabel('Diagnosis')
-
-
-# In[ ]:
-
 
 
 
