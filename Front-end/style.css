@@ -927,25 +927,20 @@ input:-webkit-autofill:focus {
     color: #ffffff;
     padding: 180px 0 120px;
 }
-
 .site-header a {
     color: #ffffff;
 }
-
 .breadcrumb {
     background: none;
     display: inline-block;
     margin-top: 10px;
     padding: 0;
 }
-
-
 .post-single:after {
     content: "";
     clear: both;
     display: table;
 }
-
 .post-single {
     padding: 30px;
     border-radius: 3px;
@@ -953,53 +948,43 @@ input:-webkit-autofill:focus {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
-
 .single-post .post-single {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-
 .single-post .post-single .post-media {
     -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     padding: 30px;
     margin-bottom: 30px;
 }
-
 .post-single.sticky .post-media {
     width: 55%;
     float: left;
     margin-right: 60px;
 }
-
 .post-single .post-media {
     overflow: hidden;
     border-radius: 3px;
 }
-
 .post-single .post-media img {
     width: 100%;
 }
-
 .post-single .post-meta {
     overflow: hidden;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 .post-single .post-body .post-meta .post-tags {
     float: left;
 }
-
 .post-single .post-body .post-meta .post-date {
     float: right;
 }
-
 .post-single .post-body h4 {
     font-size: 22px;
     margin-bottom: 20px;
 }
-
 .post-single .post-body .read-more {
     margin-top: 10px;
     display: inline-block;
@@ -1009,28 +994,23 @@ input:-webkit-autofill:focus {
     font-size: 14px;
     color: #768ede;
 }
-
 .post-single .post-body .read-more:after {
     content: '\e87a';
     font-family: 'Linearicons-Free';
     margin-left: 5px;
 }
-
 /*-- 21. Pagination --*/
-
 .pagination .nav-links {
     padding: 20px;
     -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     display: inline-block;
 }
-
 .pagination {
     text-align: center;
     margin-top: 80px;
     width: 100%;
 }
-
 .pagination .nav-links .page-numbers {
     width: 40px;
     height: 40px;
@@ -1038,13 +1018,11 @@ input:-webkit-autofill:focus {
     line-height: 40px;
     border-radius: 50%;
 }
-
 .pagination .nav-links .page-numbers:hover {
     color: rgb(72, 44, 191);
     background-color: #f5f6ff;
 
 }
-
 .pagination .nav-links .page-numbers.current {
     background: rgb(72, 44, 191);
     background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
@@ -1053,7 +1031,6 @@ input:-webkit-autofill:focus {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     color: #ffffff;
 }
-
 .post-single blockquote {
     padding: 50px 160px;
     text-align: center;
@@ -1067,9 +1044,7 @@ input:-webkit-autofill:focus {
     border: 30px solid #ffffff;
     font-style: italic;
 }
-
 /*-- 22. Comment-Respond --*/
-
 .comment-respond h4,
 .comments-area .comment-heading {
     font-size: 20px;
@@ -1077,17 +1052,14 @@ input:-webkit-autofill:focus {
     font-weight: 600;
     color: #434345;
 }
-
 .comments-list,
 .comments-list ul {
     list-style: none;
 }
-
 .comments-list .comment {
     position: relative;
     padding-left: 130px;
 }
-
 .comments-list .comment .comment-pic {
     width: 100px;
     height: 100px;
@@ -1097,28 +1069,22 @@ input:-webkit-autofill:focus {
     top: 0;
     overflow: hidden;
 }
-
 .comments-list .comment .comment-content .comment-header {
     color: #434345
 }
-
 .comments-list .comment .comment-content .comment-header h4 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-
 .comments-list li li .comment .comment-pic {
     width: 80px;
     height: 80px;
 }
-
 .comments-list li {
     margin-bottom: 30px;
 }
-
 /*-- 23. Form-Stype --*/
-
 .form-control {
     border-radius: 2px;
     padding: 15px 20px;
@@ -1126,17 +1092,14 @@ input:-webkit-autofill:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-
 .form-control:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-
 .form-double .box {
     width: calc(50% - 15px);
     float: left;
 }
-
 .form-double .box.last {
     float: right;
 }
