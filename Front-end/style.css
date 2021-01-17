@@ -1,11 +1,7 @@
 /*-----------------------------------------------------------------------------------
-
-
-
 * {
     outline: none;
 }
-
 a {
     text-decoration: none;
     outline: none;
@@ -14,7 +10,6 @@ a {
     transition: 0.4s;
     color: #333333;
 }
-
 input:focus,
 button:focus,
 a:focus,
@@ -23,12 +18,10 @@ a:hover {
     outline: none;
     color: #768ede;
 }
-
 img {
     max-width: 100%;
     height: auto;
 }
-
 h1,
 h2,
 h3,
@@ -56,7 +49,6 @@ html,
 body {
     height: 100%
 }
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -64,18 +56,13 @@ body {
     line-height: 32px;
     color: #8790af;
 }
-
-
 /* Remove Chrome Input Field's Unwanted Yellow Background Color */
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
-
 /*-- 3. Button-Style --*/
-
 .bttn-white {
     position: relative;
     background: rgb(72, 44, 191);
@@ -88,16 +75,12 @@ input:-webkit-autofill:focus {
     margin-right: 10px;
     border: none;
 }
-
 .bttn-white img {
     height: 20px;
     margin-right: 5px;
     margin-top: -5px;
     display: inline-block;
 }
-
-
-
 .bttn-white:before {
     content: "";
     position: absolute;
@@ -112,17 +95,14 @@ input:-webkit-autofill:focus {
     transition: 0.3s;
     opacity: 1;
 }
-
 .bttn-white.active,
 .bttn-white:hover {
     color: #ffffff;
 }
-
 .bttn-white.active:before,
 .bttn-white:hover:before {
     opacity: 0;
 }
-
 .bttn-default,
 .bttn-white {
     padding: 12px 30px;
@@ -139,13 +119,10 @@ input:-webkit-autofill:focus {
     transition: 0.3s;
     border: none;
 }
-
 .bttn-default .lnr,
 .bttn-white .lnr {
     margin-right: 10px;
 }
-
-
 .bttn-default {
     padding: 12px 40px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
@@ -165,7 +142,6 @@ input:-webkit-autofill:focus {
     -ms-transform: translateY(0);
     transform: translateY(0);
 }
-
 .bttn-default:hover {
     color: #ffffff;
     -webkit-box-shadow: 0 25px 50px -20px rgba(0, 0, 0, 0.6);
@@ -174,33 +150,25 @@ input:-webkit-autofill:focus {
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
 }
-
 .sq {
     border-radius: 3px !important;
 }
-
-
 /*-- 4. Helper-Classes --*/
-
 .section-padding-top {
     padding-top: 120px;
 }
-
 .section-padding {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-
 .upper {
     text-transform: uppercase;
 }
-
 .angle,
 .overlay {
     position: relative;
     z-index: 1;
 }
-
 .overlay:before {
     content: "";
     position: absolute;
@@ -222,7 +190,6 @@ input:-webkit-autofill:focus {
     /* IE6-9 fallback on horizontal gradient */
     z-index: -2;
 }
-
 .angle:after {
     content: "";
     position: absolute;
@@ -236,25 +203,19 @@ input:-webkit-autofill:focus {
     background: rgba(0, 0, 0, 0) linear-gradient(to right top, #ffffff 50%, transparent 50%) repeat scroll 0 0;
     z-index: -1;
 }
-
 .dark-color {
     color: #434345
 }
-
 .blue-color {
     color: #5e88fc;
 }
-
 .white-color {
     color: #ffffff !important;
 }
-
 .gray-bg {
     background-color: #f5f6ff;
 }
-
 /*-- 5. MainMenu-Area --*/
-
 .mainmenu-area {
     position: absolute;
     left: 0;
@@ -267,7 +228,6 @@ input:-webkit-autofill:focus {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
 .mainmenu-area:before {
     content: '';
     position: absolute;
@@ -286,22 +246,18 @@ input:-webkit-autofill:focus {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
 .mainmenu-area.affix {
     position: fixed;
     top: 0;
 }
-
 .mainmenu-area.affix:before {
     opacity: 1;
 }
-
 .mainmenu-area .right-button {
     position: absolute;
     right: 15px;
     top: 12px;
 }
-
 .mainmenu-area .right-button a {
     color: #ffffff;
     padding: 10px 40px;
@@ -313,24 +269,20 @@ input:-webkit-autofill:focus {
     font-weight: 700;
     font-size: 14px;
 }
-
 .mainmenu-area .right-button a:hover {
     background-color: rgba(255, 255, 255, 1);
     color: #768ede;
 }
-
 .mainmenu-area ul.mainmenu {
     text-align: center;
     float: none;
     display: block;
 }
-
 .mainmenu-area ul.mainmenu li {
     float: none;
     display: inline-block;
     text-align: center;
 }
-
 .mainmenu-area ul.nav.navbar-nav li a {
     color: #ffffff;
     padding: 10px 2px;
@@ -340,23 +292,18 @@ input:-webkit-autofill:focus {
     border-bottom: 2px solid transparent;
     margin: 0 15px;
 }
-
 .mainmenu-area ul.nav.navbar-nav li a:hover,
 .mainmenu-area ul.nav.navbar-nav li.active a {
     border-bottom-color: #ffffff;
 }
-
 .mainmenu-area .navbar-brand {
     height: auto;
     padding: 0 15px;
 }
-
 .mainmenu-area .navbar-brand img {
     height: 40px;
 }
-
 /*-- 6. Page-Title --*/
-
 .page-title .title {
     position: relative;
     display: inline-block;
@@ -365,7 +312,6 @@ input:-webkit-autofill:focus {
     color: #8790af;
     font-weight: 600;
 }
-
 .text-center.page-title .title:before,
 .page-title .title:after {
     content: '';
@@ -378,9 +324,7 @@ input:-webkit-autofill:focus {
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
 }
-
 /*-- 7. Home-Area --*/
-
 .home-area {
     width: 100%;
     background: url('images/header-bg.jpg') no-repeat scroll center bottom / cover;
@@ -388,15 +332,12 @@ input:-webkit-autofill:focus {
     color: #ffffff;
     margin-bottom: 100px;
 }
-
 .home-area .mobile-image {
     margin-right: 0;
     margin-left: 0;
     margin-bottom: -158px;
 }
-
 /*-- 8. Progress-Area --*/
-
 .progress-area {
     background-image: url('images/progress-bg.jpg');
     background-repeat: no-repeat;
@@ -405,14 +346,11 @@ input:-webkit-autofill:focus {
     margin-top: 90px;
     margin-bottom: 220px;
 }
-
 .progress-area .mobile-image {
     margin-top: -90px;
     margin-bottom: -153px;
 }
-
 /*-- 9. Video-Area --*/
-
 .video-area {
     background-image: url('images/video-bg.jpg');
     background-repeat: no-repeat;
@@ -420,17 +358,14 @@ input:-webkit-autofill:focus {
     background-size: auto 100%;
     margin-bottom: 120px;
 }
-
 .video-photo {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
 }
-
 .video-photo > img {
     width: 100%;
 }
-
 .video-area a.video-button {
     position: absolute;
     top: 50%;
@@ -440,9 +375,7 @@ input:-webkit-autofill:focus {
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
-
 /*-- 10. Feature-Area --*/
-
 .feature-area {
     color: #ffffff;
     background-color: #5e88fc;
@@ -452,22 +385,17 @@ input:-webkit-autofill:focus {
     background-size: auto 94%;
     margin-bottom: 142px;
 }
-
 .feature-area .page-title .title {
     color: #ffffff;
 }
-
 .feature-area .mobile-image {
     margin-bottom: -142px;
 }
-
 /*-- 11. Service-Box --*/
-
 .service-box {
     position: relative;
     padding-left: 100px;
 }
-
 .team-slide .owl-controls .owl-nav > div,
 .service-box .box-icon {
     position: absolute;
@@ -498,12 +426,10 @@ input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
 }
-
 .team-slide .owl-controls .owl-nav > div:hover,
 .service-box:hover .box-icon {
     color: #ffffff;
 }
-
 .team-slide .owl-controls .owl-nav > div:before,
 .service-box .box-icon:before {
     content: '';
@@ -519,23 +445,18 @@ input:-webkit-autofill:focus {
     transition: 0.3s;
     opacity: 1;
 }
-
 .team-slide .owl-controls .owl-nav > div:hover:before,
 .service-box:hover .box-icon:before {
     opacity: 0;
 }
-
 .service-box h4 {
     margin-bottom: 10px;
 }
-
 /*-- 12. Testimonial-Area --*/
-
 .testimonial-area {
     padding-top: 60px;
     padding-bottom: 120px;
 }
-
 .team-box {
     position: relative;
     padding: 55px 30px 30px 30px;
@@ -550,12 +471,10 @@ input:-webkit-autofill:focus {
     margin-left: 15px;
     margin-right: 15px;
 }
-
 .team-box:hover {
     -webkit-box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
 }
-
 .team-box .team-image {
     position: absolute;
     top: -40px;
@@ -569,19 +488,16 @@ input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
 }
-
 .team-box h4 {
     color: #5e88fc;
     font-weight: 600;
     font-size: 20px;
 }
-
 .team-box h6.position {
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
 }
-
 .team-slide .owl-controls .owl-nav > div {
     position: absolute;
     top: 50%;
@@ -591,14 +507,11 @@ input:-webkit-autofill:focus {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%)
 }
-
 .team-slide .owl-controls .owl-nav > div.owl-next {
     right: auto;
     left: 100%;
 }
-
 /*-- 13. Gallery-Area --*/
-
 .gallery-area {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
     background: rgb(72, 44, 191);
@@ -613,24 +526,19 @@ input:-webkit-autofill:focus {
     /* IE6-9 fallback on horizontal gradient */
     color: #ffffff;
 }
-
 .gallery-slide .owl-stage-outer {
     background: url('images/mobile-screen.png') no-repeat center right / auto 100%;
-
 }
-
 .gallery-slide .item {
     margin: 58px 17px 70px 15px;
     overflow: hidden;
     border-radius: 2px;
 }
-
 .gallery-slide .owl-controls {
     position: static;
     text-align: right;
     padding-right: 80px;
 }
-
 .gallery-slide .owl-controls .owl-nav > div {
     display: inline-block;
     background-color: #ffffff;
@@ -642,12 +550,10 @@ input:-webkit-autofill:focus {
     color: rgba(72, 44, 191, 1);
     margin: 5px;
 }
-
 .gallery-slide .owl-controls .owl-dots .owl-dot {
     display: inline-block;
     margin: 3px;
 }
-
 .gallery-slide .owl-controls .owl-dots .owl-dot span {
     display: inline-block;
     width: 5px;
@@ -663,16 +569,13 @@ input:-webkit-autofill:focus {
     -ms-transform: scale(1);
     transform: scale(1);
 }
-
 .gallery-slide .owl-controls .owl-dots .owl-dot.active span {
     opacity: 1;
     -webkit-transform: scale(2);
     -ms-transform: scale(2);
     transform: scale(2);
 }
-
 /*-- 14. Download-Area --*/
-
 .download-area {
     background-image: url('images/download-bg.png');
     background-repeat: no-repeat;
@@ -682,14 +585,11 @@ input:-webkit-autofill:focus {
     margin-bottom: 100px;
     color: #ffffff;
 }
-
 .download-area .mobile-image {
     margin-top: -106px;
     margin-bottom: -200px;
 }
-
 /*-- 15. Price-Area --*/
-
 .price-box {
     border-radius: 5px;
     overflow: hidden;
@@ -701,12 +601,10 @@ input:-webkit-autofill:focus {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
 .price-box:hover {
     -webkit-box-shadow: 0 0 50px -15px #4d43c6;
     box-shadow: 0 0 50px -15px #4d43c6;
 }
-
 .price-box .price-header {
     background-color: #f2f3fc;
     padding: 40px;
@@ -728,7 +626,6 @@ input:-webkit-autofill:focus {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
 .price-box .price-header:before {
     content: '';
     position: absolute;
@@ -743,60 +640,47 @@ input:-webkit-autofill:focus {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
 .price-box:hover .price-header {
     color: #ffffff;
 }
-
 .price-box:hover .price-header:before {
     opacity: 0;
 }
-
-
 .price-box .price-header .price-icon {
     font-size: 60px;
     margin-bottom: 10px;
 }
-
 .price-box .price-header h4 {
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 3px;
 }
-
 .price-box .price-body {
     padding: 40px;
 }
-
 .price-box .price-body ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 .price-box .price-rate {
     color: #768ede;
     margin-bottom: 40px;
     font-size: 20px;
 }
-
 .price-box .price-rate sup {
     top: -20px;
     font-size: 26px;
 }
-
 .price-box .price-rate .rate {
     font-size: 56px;
 }
-
 .price-box .price-footer {
     margin-bottom: 40px;
 }
-
 .price-box .price-footer .bttn-white {
     padding: 13px 50px;
 }
-
 .price-box .price-footer .bttn-white:before {
     width: calc(100% - 4px);
     height: calc(100% - 4px);
@@ -804,17 +688,13 @@ input:-webkit-autofill:focus {
     left: 2px;
     top: 2px;
 }
-
 /*-- 16. Questions-area --*/
-
 .questions-area {
     background-color: #f5f6ff;
 }
-
 .toggole-boxs {
     margin-top: -20px;
 }
-
 .toggole-boxs h3 {
     font-size: 18px;
     background-color: #ffffff;
@@ -827,7 +707,6 @@ input:-webkit-autofill:focus {
     cursor: pointer;
     position: relative;
 }
-
 .toggole-boxs h3:before,
 .toggole-boxs h3:after {
     content: '';
@@ -838,7 +717,6 @@ input:-webkit-autofill:focus {
     height: 2px;
     background-color: #434345;
 }
-
 .toggole-boxs h3:before {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -847,35 +725,28 @@ input:-webkit-autofill:focus {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
 .toggole-boxs h3.ui-state-active:before {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg)
 }
-
 .toggole-boxs div {
     background-color: #ffffff;
     padding: 0 30px 20px 60px;
     border-left: 5px solid #5e88fc;
 }
-
 /*-- 17. Subscribe-Form --*/
-
 .subscribe-area {
     background: url('images/subscribe-bg.jpg') no-repeat scroll center center / cover;
 }
-
 .subscribe-form {
     background-color: #ffffff;
     padding: 60px;
     border-radius: 5px;
 }
-
 .subscribe-form form {
     position: relative;
 }
-
 .subscribe-form form .control {
     width: 100%;
     height: auto;
@@ -883,21 +754,17 @@ input:-webkit-autofill:focus {
     border-radius: 100px;
     border: 1px solid #5e88fc;
 }
-
 .subscribe-form form .bttn-white {
     position: absolute;
     right: 0;
     top: 0;
     margin-right: 0;
 }
-
 /*-- 18. Footer-Area --*/
-
 .footer-box {
     text-align: center;
 
 }
-
 .footer-box .box-icon {
     width: 75px;
     height: 75px;
@@ -923,7 +790,6 @@ input:-webkit-autofill:focus {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
 .footer-box .box-icon:before {
     content: "";
     position: absolute;
@@ -938,43 +804,34 @@ input:-webkit-autofill:focus {
     -o-transition: 0.3s;
     transition: 0.3s
 }
-
 .footer-box:hover .box-icon {
     color: #5e88fc;
 }
-
 .footer-box:hover .box-icon:before {
     background-color: #ffffff;
 }
-
 .footer-bottom {
     padding: 20px 0;
     background-color: #f5f6ff;
     border-top: 1px solid #5e88fc;
 }
-
 .footer-bottom .footer-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: right;
 }
-
 .footer-bottom .footer-menu ul li {
     display: inline-block;
 }
-
 .footer-bottom .footer-menu ul li a {
     padding: 10px;
     color: #8790af
 }
-
 .footer-bottom .footer-menu ul li a:hover {
     color: #5e88fc;
 }
-
 /*-- 19. ScrollUp-Button --*/
-
 #scrollUp {
     right: 0;
     bottom: 0;
@@ -985,7 +842,6 @@ input:-webkit-autofill:focus {
     font-size: 30px;
     color: #5e88fc;
 }
-
 .preloader {
     background-color: #ffffff;
     bottom: 0;
@@ -995,7 +851,6 @@ input:-webkit-autofill:focus {
     width: 100%;
     z-index: 99999999;
 }
-
 .preloader span {
     background: rgb(72, 44, 191);
     background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
@@ -1018,7 +873,6 @@ input:-webkit-autofill:focus {
     -webkit-animation: mymove 1.5s infinite linear;
     animation: mymove 1.5s infinite linear;
 }
-
 @-webkit-keyframes mymove {
     0 {
         -webkit-box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
@@ -1041,7 +895,6 @@ input:-webkit-autofill:focus {
         box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
     }
 }
-
 @keyframes mymove {
     0 {
         -webkit-box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
@@ -1064,9 +917,7 @@ input:-webkit-autofill:focus {
         box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
     }
 }
-
 /*-- 20. Blog-Post --*/
-
 .site-header {
     background: rgb(72, 44, 191);
     background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
