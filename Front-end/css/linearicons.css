@@ -9,7 +9,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 .lnr {
 	font-family: 'Linearicons-Free';
 	speak: none;
@@ -23,7 +22,6 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
 .lnr-home:before {
 	content: "\e800";
 }
