@@ -22,7 +22,6 @@
   0% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
@@ -36,7 +35,6 @@
     opacity: 0;
   }
 }
-
 /*
  * 	Owl Carousel - Auto Height Plugin
  */
@@ -47,7 +45,6 @@
   -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
-
 /*
  *  Core Owl Carousel CSS File
  */
@@ -137,12 +134,10 @@
 .owl-carousel.owl-rtl .owl-item {
   float: right;
 }
-
 /* No Js */
 .no-js .owl-carousel {
   display: block;
 }
-
 /*
  * 	Owl Carousel - Lazy Load Plugin
  */
