@@ -1,53 +1,40 @@
 /*-- Space-Class --*/
-
 [class|=space] {
     display: block;
     width: 100%;
     overflow: hidden
 }
-
 .space-10 {
     height: 10px;
 }
-
 .space-20 {
     height: 20px;
 }
-
 .space-30 {
     height: 30px;
 }
-
 .space-40 {
     height: 40px;
 }
-
 .space-50 {
     height: 50px;
 }
-
 .space-60 {
     height: 60px;
 }
-
 .space-70 {
     height: 70px;
 }
-
 .space-80 {
     height: 80px;
 }
-
 .space-90 {
     height: 90px;
 }
-
 .space-100 {
     height: 100px;
 }
-
 /* Medium Layout: 1280px. */
-
 @media only screen and (min-width: 992px) and (max-width: 1280px) {
     .mainmenu-area ul.nav.navbar-nav li a {
         margin: 0 10px;
@@ -78,9 +65,7 @@
         height: 80px;
     }
 }
-
 /* Tablet Layout: 768px. */
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .home-area {
         padding: 100px 0;
@@ -106,7 +91,6 @@
     .testimonial-area {
         padding: 60px 0;
     }
-
     .video-photo {
         margin-bottom: 60px;
     }
@@ -126,9 +110,7 @@
         height: 80px;
     }
 }
-
 /* Mobile Layout: 320px. */
-
 @media only screen and (max-width: 767px) {
     body {
         font-size: 14px;
@@ -234,13 +216,11 @@
     .subscribe-form form .control {
         padding-right: 15px;
     }
-
     .post-single.sticky .post-media {
         margin-right: 0;
         float: none;
         width: 100%;
     }
-
     .form-double .box {
         width: 100%;
         float: none;
@@ -263,7 +243,5 @@
         margin-bottom: 30px;
     }
 }
-
 /* Wide Mobile Layout: 480px. */
-
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
