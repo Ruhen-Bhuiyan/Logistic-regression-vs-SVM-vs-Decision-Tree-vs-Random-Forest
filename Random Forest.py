@@ -18,10 +18,7 @@ mydata = pd.read_csv('D:\\445\\khidmahactuall.csv')
 names = ["Age","Smoke","Dia_family_mem","Height","Weight","Pulse","Bp","Date of detection","FBS","ABF","T.Chol","TG","SGPT","Creatinine"] 
 space = mydata.iloc[:, mydata.columns != 'Diagnosis']
 predict_class = mydata.iloc[:, mydata.columns == 'Diagnosis']
-training_set, test_set, class_set, test_class_set = train_test_split(space,
-                                                                    predict_class,
-                                                                    test_size = 0.20, 
-                                                                    random_state = 50)
+training_set, test_set, class_set, test_class_set = train_test_split(space,predict_class,test_size = 0.20, random_state = 50)
 fit_random_forest = RandomForestClassifier(random_state=42)
 np.random.seed(50)
 start = time.time()
