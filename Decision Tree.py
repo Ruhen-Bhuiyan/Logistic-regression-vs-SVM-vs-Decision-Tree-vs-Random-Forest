@@ -20,6 +20,7 @@ for i, k in enumerate(depth):
     classi = tree.DecisionTreeClassifier(max_depth=k)
     classi.fit(X_train, y_train)
     training_accuracy[i] = classi.score(X_train, y_train)
+    
 plt.title('Different depth of tree')
 plt.plot(depth, training_accuracy, label = 'Training Accuracy')
 plt.legend()
