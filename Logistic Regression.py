@@ -18,6 +18,7 @@ y = mydata['Diagnosis']
 mymodel = LogisticRegression()
 rfe = RFE(mymodel, 5)
 rfe = rfe.fit(X, y)
+
 print('Selected features are as follows: %s' % list(X.columns[rfe.support_]))
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import accuracy_score, classification_report, precision_score, recall_score 
