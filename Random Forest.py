@@ -22,6 +22,7 @@ training_set, test_set, class_set, test_class_set = train_test_split(space,predi
 fit_random_forest = RandomForestClassifier(random_state=42)
 np.random.seed(50)
 start = time.time()
+
 param_dist = {'max_depth': [2, 3, 4],
               'bootstrap': [True, False],
               'max_features': ['auto', 'sqrt', 'log2', None],
