@@ -5,7 +5,6 @@ from sklearn.metrics import confusion_matrix
 from sklearn import svm
 import itertools
 import matplotlib.pyplot as plt
-
 import matplotlib.mlab as mlab
 import seaborn
 get_ipython().run_line_magic('matplotlib', 'inline')
