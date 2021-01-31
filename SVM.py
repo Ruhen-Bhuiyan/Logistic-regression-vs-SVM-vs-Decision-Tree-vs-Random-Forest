@@ -19,7 +19,6 @@ from sklearn import svm
 from sklearn import metrics
 svm1 = svm.SVC(verbose=True)
 svm1.fit(X_train,y_train)
-
 y_pred = svm1.predict(X_test)
 print('Accuracy Score: {}'.format(metrics.accuracy_score(y_test,y_pred)))
 print('ROC AUC Score: {}'.format(metrics.roc_auc_score(y_test,y_pred)))
