@@ -7,6 +7,7 @@ import seaborn as sns
 sns.set(style="white") 
 sns.set(style="whitegrid", color_codes=True)
 import warnings
+
 warnings.simplefilter(action='ignore')
 mydata = pd.read_csv("D:\\445\\khidmahactuall.csv")
 mydata.head()
