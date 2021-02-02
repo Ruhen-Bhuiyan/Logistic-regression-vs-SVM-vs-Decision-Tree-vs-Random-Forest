@@ -3,6 +3,7 @@ import numpy as np
 from sklearn import preprocessing
 from sklearn.metrics import confusion_matrix
 from sklearn import svm
+
 import itertools
 import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
@@ -16,6 +17,7 @@ seaborn.heatmap(df_corr, cmap="YlGnBu") # Displaying the Heatmap
 seaborn.set(font_scale=2,style='white')
 plt.title('Heatmap correlation')
 plt.show()
+
 
 
 
