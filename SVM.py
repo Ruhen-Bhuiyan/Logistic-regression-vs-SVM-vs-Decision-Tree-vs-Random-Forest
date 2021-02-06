@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd 
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.linear_model import LogisticRegression
-
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score
 from sklearn.pipeline import make_pipeline, Pipeline
@@ -14,14 +13,12 @@ mydata = pd.read_csv("D:\\445\\khidmahactuall.csv")
 mydata.describe()
 trainnow = mydata.drop('Diagnosis', axis=1)
 labels = mydata['Diagnosis']
-
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(trainnow, labels, test_size=0.2, random_state=50)
 from sklearn import svm
 from sklearn import metrics
 svm1 = svm.SVC(verbose=True)
 svm1.fit(X_train,y_train)
-
 y_pred = svm1.predict(X_test)
 print('Accuracy Score: {}'.format(metrics.accuracy_score(y_test,y_pred)))
 print('ROC AUC Score: {}'.format(metrics.roc_auc_score(y_test,y_pred)))
