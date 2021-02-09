@@ -29,6 +29,7 @@ fold_names = list(range(n_folds))
 fold_names.append('Average')
 avg_score = scores.mean()
 scores = list(scores)
+
 scores.append(avg_score)
 cv_score = pd.DataFrame({'Fold Index': fold_names, 'ROC AUC (Norm)':scores, })
 cv_score
