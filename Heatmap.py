@@ -8,11 +8,13 @@ import itertools
 import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
 import seaborn
+
 get_ipython().run_line_magic('matplotlib', 'inline')
 data  = pd.read_csv("D:\\445\\KhidmahActuall.csv")
 df = pd.DataFrame(data)
 df_corr = df.corr()
 plt.figure(figsize=(15,10))
+
 seaborn.heatmap(df_corr, cmap="YlGnBu") # Displaying the Heatmap
 seaborn.set(font_scale=2,style='white')
 plt.title('Heatmap correlation')
