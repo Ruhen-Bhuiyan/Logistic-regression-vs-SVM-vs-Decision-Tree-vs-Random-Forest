@@ -1,20 +1,15 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-
 import re
 import numpy as np
-
 from sklearn import tree
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
-
-
 from sklearn.model_selection import GridSearchCV
 get_ipython().run_line_magic('matplotlib', 'inline')
 sns.set()
 mydata = pd.read_csv('D:\\445\\Khidmahactuall.csv')
-
 X = mydata.drop('Diagnosis', axis=1)
 y = mydata['Diagnosis']
 X_train, X_test, y_train, y_test = train_test_split(
