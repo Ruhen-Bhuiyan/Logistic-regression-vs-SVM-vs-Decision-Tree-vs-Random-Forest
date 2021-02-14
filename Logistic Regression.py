@@ -1,6 +1,7 @@
 import numpy as np 
 import pandas as pd 
 from sklearn import preprocessing
+
 import matplotlib.pyplot as plt 
 plt.rc("font", size=15)
 import seaborn as sns
@@ -26,6 +27,7 @@ from sklearn.metrics import accuracy_score, classification_report, precision_sco
 from sklearn.metrics import confusion_matrix, precision_recall_curve, roc_curve, auc, log_loss
 X = mydata[columns]
 y = mydata['Diagnosis']
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=2)
 logreg = LogisticRegression()
 logreg.fit(X_train, y_train)
