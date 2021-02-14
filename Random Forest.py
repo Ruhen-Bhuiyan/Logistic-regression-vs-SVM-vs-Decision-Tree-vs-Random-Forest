@@ -5,12 +5,14 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+
 from sklearn.metrics import roc_curve, auc
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 from sklearn.model_selection import KFold, cross_val_score
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestClassifier 
+
 from urllib.request import urlopen 
 plt.style.use('ggplot')
 pd.set_option('display.max_columns', 500)
@@ -25,6 +27,7 @@ start = time.time()
 param_dist = {'max_depth': [2, 3, 4],
               'bootstrap': [True, False],
               'max_features': ['auto', 'sqrt', 'log2', None],
+              
               'criterion': ['gini', 'entropy']}
 cv_rf = GridSearchCV(fit_random_forest, cv = 10,
                      param_grid=param_dist, 
