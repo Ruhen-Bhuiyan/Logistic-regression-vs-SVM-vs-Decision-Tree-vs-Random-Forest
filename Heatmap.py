@@ -6,7 +6,6 @@ from sklearn import svm
 import itertools
 import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
-
 import seaborn
 get_ipython().run_line_magic('matplotlib', 'inline')
 data  = pd.read_csv("D:\\445\\KhidmahActuall.csv")
