@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import re
 import numpy as np
+
 from sklearn import tree
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -11,6 +12,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 sns.set()
 mydata = pd.read_csv('D:\\445\\Khidmahactuall.csv')
 X = mydata.drop('Diagnosis', axis=1)
+
 y = mydata['Diagnosis']
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=50, stratify=y)
