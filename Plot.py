@@ -5,6 +5,7 @@ import seaborn as sns
 d = pd.read_csv("D:\\445\\13.csv")
 plt.scatter(d['Age'],d['Diagnosis'])
 plt.xlabel('Age')
+
 plt.ylabel('Diagnosis')
 plt.title('Scatter plot on dataset')
 sns.boxplot(x='Diagnosis',y='FBS',data=d)
