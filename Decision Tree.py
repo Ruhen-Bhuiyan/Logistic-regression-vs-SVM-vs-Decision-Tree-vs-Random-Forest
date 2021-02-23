@@ -16,6 +16,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=50, stratify=y)
 depth = np.arange(1, 9)
 training_accuracy = np.empty(len(depth))
+
 for i, k in enumerate(depth):
     classi = tree.DecisionTreeClassifier(max_depth=k)
     classi.fit(X_train, y_train)
