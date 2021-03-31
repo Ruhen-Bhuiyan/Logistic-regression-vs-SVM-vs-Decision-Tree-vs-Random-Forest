@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 d = pd.read_csv("D:\\445\\13.csv")
+
 plt.scatter(d['Age'],d['Diagnosis'])
 plt.xlabel('Age')
 plt.ylabel('Diagnosis')
@@ -18,6 +19,7 @@ pd.crosstab(d.Age,d.Smoke).plot(kind='bar')
 plt.title('How Age effect diagnosis')
 plt.xlabel('Age')
 plt.ylabel('Smoke')
+               
 table=pd.crosstab(d.FBS,d.Diagnosis)
 table.div(table.sum(1).astype(float), axis=0).plot(kind='bar', stacked=True)
 plt.title('Stacked Bar Chart ')
