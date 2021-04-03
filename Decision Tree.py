@@ -4,6 +4,7 @@ import seaborn as sns
 import re
 import numpy as np
 from sklearn import tree
+
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import GridSearchCV
@@ -23,11 +24,13 @@ for i, k in enumerate(depth):
 plt.title('Different depth of tree')
 plt.plot(depth, training_accuracy, label = 'Training Accuracy')
 plt.legend()
+
 plt.xlabel('Depth of tree')
 plt.ylabel('Accuracy')
 plt.show()
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
+
 classifier = DecisionTreeClassifier()
 classifier.fit(X_train, y_train)
 predict = classifier.predict(X_test)
