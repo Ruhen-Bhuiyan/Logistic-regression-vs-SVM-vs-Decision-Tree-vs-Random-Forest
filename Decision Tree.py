@@ -23,7 +23,6 @@ for i, k in enumerate(depth):
 plt.title('Different depth of tree')
 plt.plot(depth, training_accuracy, label = 'Training Accuracy')
 plt.legend()
-
 plt.xlabel('Depth of tree')
 plt.ylabel('Accuracy')
 plt.show()
