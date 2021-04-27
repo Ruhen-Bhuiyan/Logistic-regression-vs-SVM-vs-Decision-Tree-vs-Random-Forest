@@ -17,6 +17,7 @@ sns.countplot(x='Smoke',data=d,palette='hls')
 plt.show()
 get_ipython().run_line_magic('matplotlib', 'inline')
 pd.crosstab(d.Age,d.Smoke).plot(kind='bar')
+               
 plt.title('How Age effect diagnosis')
 plt.xlabel('Age')
 plt.ylabel('Smoke')
