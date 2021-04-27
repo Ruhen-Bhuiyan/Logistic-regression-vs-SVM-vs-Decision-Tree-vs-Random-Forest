@@ -25,6 +25,7 @@ plt.ylabel('Smoke')
 table=pd.crosstab(d.FBS,d.Diagnosis)
 table.div(table.sum(1).astype(float), axis=0).plot(kind='bar', stacked=True)
 plt.title('Stacked Bar Chart ')
+               
 plt.xlabel('FBS')
 plt.ylabel('Diagnosis')
 
