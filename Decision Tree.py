@@ -11,6 +11,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import GridSearchCV
 get_ipython().run_line_magic('matplotlib', 'inline')
 sns.set()
+
 mydata = pd.read_csv('D:\\445\\Khidmahactuall.csv')
 X = mydata.drop('Diagnosis', axis=1)
 y = mydata['Diagnosis']
